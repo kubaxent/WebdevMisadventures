@@ -1,0 +1,36 @@
+table{
+    width: 100%;
+}
+
+html {
+    font-family: "Arial Black", Gadget, sans-serif;
+    background-image: url(deathstar.jpg);
+    background-repeat: repeat; 
+  }
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    width: 80vh;
+    height: 80vh;
+    border-radius: 5px;
+}
+
+#main{
+    text-align: center;
+    background: lightgrey;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+td{
+    background-color: gray;
+}
+input{
+    width: 100%;
+}

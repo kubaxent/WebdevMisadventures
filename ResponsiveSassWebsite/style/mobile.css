@@ -1,0 +1,22 @@
+@media only screen and (max-width: 599px) {
+  footer {
+    display: none;
+  }
+  .menu-item {
+    display: none;
+  }
+  .content-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .content {
+    margin-top: 0.5%;
+    width: 100%;
+  }
+  .content-container > div:first-child {
+    margin-top: 0;
+  }
+}
+/*# sourceMappingURL=mobile.css.map */

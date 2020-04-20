@@ -1,0 +1,26 @@
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+  .menu-item {
+    display: none;
+  }
+  .content-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .content-container > div:first-child {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    margin-bottom: 0.5%;
+  }
+  .content {
+    width: 49.75%;
+  }
+}
+/*# sourceMappingURL=tablet.css.map */

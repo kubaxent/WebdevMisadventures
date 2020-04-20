@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Lightsaber list example</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+  </head>
+
+  <body>
+
+    <div id = "main">
+
+      <img src = "./grievous.png">
+      <h2>Hello there! Welcome to my lightsaber collection</h2>
+      <button>Add a lightsaber</button>
+
+      <table>
+        <tr>
+          <th>Color</th>
+          <th>Owner</th>
+          <th>Length</th>
+          <th>Buttons</th>
+        </tr>
+      </table>
+
+    </div>
+
+    <script>
+      const button = document.querySelector('button');
+      const table = document.querySelector('table');
+
+      function edit_function(button,p1,p2,p3){
+        button.textContent = "Save"
+
+        p1.contentEditable = true;
+        p2.contentEditable = true;
+        p3.contentEditable = true;
+
+        button.onclick = function(){
+          save_function(button,p1,p2,p3);
+        } 
+      }
+
+      function save_function(button,p1,p2,p3){
+        button.textContent = "Edit"
+
+        p1.contentEditable = false;
+        p2.contentEditable = false;
+        p3.contentEditable = false;
+
+        button.onclick = function(){
+          edit_function(button,p1,p2,p3);
+        } 
+      }
+
+      button.onclick = function(){
+        
+        const new_row = document.createElement('tr');
+        const new_color_td = document.createElement('td');
+        const new_color_input = document.createElement('p');
+        new_color_input.contentEditable = true;
+        new_color_td.appendChild(new_color_input);
+        
+        const new_owner_td = document.createElement('td');
+        const new_owner_input = document.createElement('p');
+        new_owner_input.contentEditable = true;
+        new_owner_td.appendChild(new_owner_input);
+
+        const new_length_td = document.createElement('td');
+        const new_length_input = document.createElement('p');
+        new_length_input.contentEditable = true;
+        new_length_td.appendChild(new_length_input);
+
+        const new_buttons_td = document.createElement('td');
+        
+        new_buttons_td.style = 'width: 15%';
+
+        const new_save_edit_button = document.createElement('button');
+        new_save_edit_button.textContent = 'Save';
+
+        new_save_edit_button.onclick = function(){
+          save_function(new_save_edit_button,new_color_input, new_owner_input, new_length_input);
+        }
+
+        const new_remove_button = document.createElement('button');
+        new_remove_button.textContent = 'Remove';
+
+        new_buttons_td.appendChild(new_save_edit_button);
+        new_buttons_td.appendChild(new_remove_button);
+
+        new_row.appendChild(new_color_td);
+        new_row.appendChild(new_owner_td);
+        new_row.appendChild(new_length_td);
+        new_row.appendChild(new_buttons_td);
+
+        new_remove_button.onclick = function(){
+          new_row.remove();
+        }
+
+        table.appendChild(new_row);
+
+      }
+    </script>
+  </body>
+</html>

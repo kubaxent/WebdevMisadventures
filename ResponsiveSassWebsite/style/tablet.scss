@@ -1,0 +1,23 @@
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+    .menu-item{
+        display: none;
+    }
+    .content-container {
+        display: flex;
+        //justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .content-container>div {
+        //flex: 1 0 50%;
+    }
+    .content-container>div:first-child {
+        flex: 0 1 100%;
+        margin-bottom: 0.5%;
+    }
+
+    .content{
+        width: 49.75%;
+    }
+
+}
