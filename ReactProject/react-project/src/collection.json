@@ -1,0 +1,39 @@
+{
+    "posters":[
+        {
+            "id": 0,
+            "name": "Keep Calm poster",
+            "description": "A WW2 british propaganda poster",
+            "image": "https://static.posters.cz/image/750/plakaty/keep-calm-and-carry-on-i8458.jpg",
+            "rating": 7
+        },
+        {
+            "id": 1,
+            "name": "We Can Do It poster",
+            "description": "A WW2 poster promoting women's work in factories",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/1/12/We_Can_Do_It%21.jpg",
+            "rating": 8
+        },
+        {
+            "id": 2,
+            "name": "I Want You poster",
+            "description": "A WW2 US recruitment poster",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Unclesamwantyou.jpg/1200px-Unclesamwantyou.jpg",
+            "rating": 8
+        },
+        {
+            "id": 3,
+            "name": "Poland first to fight poster",
+            "description": "A WW2 british propaganda poster",
+            "image": "https://stylowydwor.pl/userdata/public/gfx/4b5da0b0f2a57cfe3936d0c7e9d2cbc7.jpg",
+            "rating": 6
+        },
+        {
+            "id": 4,
+            "name": "United poster",
+            "description": "A WW2 united nations poster",
+            "image": "https://images-na.ssl-images-amazon.com/images/I/81dLH973bjL._AC_SL1500_.jpg",
+            "rating": 9
+        }
+    ]
+}
