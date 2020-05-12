@@ -1,0 +1,41 @@
+[{
+  "_id": {
+    "$oid": "5eb6e3afc3517cb458f33625"
+  },
+  "name": "Crusader Kings II",
+  "price": 20,
+  "stock": 0,
+  "img": "https://image.ceneostatic.pl/data/products/33057621/i-crusader-kings-ii-collection-digital.jpg"
+},{
+  "_id": {
+    "$oid": "5eb6e491c3517cb458f33627"
+  },
+  "name": "Europa Universalis IV",
+  "price": 30,
+  "stock": 5,
+  "img": "https://image.ceneostatic.pl/data/products/24053694/i-europa-universalis-iv-digital.jpg"
+},{
+  "_id": {
+    "$oid": "5eb6e4d0c3517cb458f33628"
+  },
+  "name": "Hearts of Iron IV",
+  "price": 40,
+  "stock": 0,
+  "img": "https://static.muve.pl/uploads/product-cover/0021/9048/hearts-of-iron-iv-cadet-edition-packshot.jpg"
+},{
+  "_id": {
+    "$oid": "5eb861dc79f5eaa1d20407c2"
+  },
+  "name": "Doom (2016)",
+  "price": 60,
+  "stock": 4,
+  "img": "https://i0.wp.com/modchipguys.com/wp-content/uploads/2019/09/330px-2a4705aa4bf6d4f0082cfd9e346b3815.png?fit=330%2C496&ssl=1"
+},{
+  "_id": {
+    "$oid": "5eb8622979f5eaa1d20407c3"
+  },
+  "name": "Doom Eternal",
+  "price": 60,
+  "stock": -1,
+  "img": "https://images.g2a.com/newlayout/323x433/1x1x0/1634a91bf308/5cfe1b2546177c33b37059d5"
+}]

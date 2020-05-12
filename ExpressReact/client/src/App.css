@@ -1,0 +1,149 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.navbar{
+  background-color: darkslategray;
+  height: 7vh;
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.item{
+  background-color: lightskyblue;
+  overflow-wrap: break-word;
+  padding: 5vh;
+  box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+}
+
+.item-grid {
+  padding: 5vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30vh, 1fr));
+  grid-gap: 5vh;
+}
+
+.navbar-button-link{
+  width: 15vh;
+  display:inline-block;
+  padding:0.35em 1.2em;
+  margin: 0;
+  border:0.05em solid lightslategray;
+  background-color:lightslategray;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-size: medium;
+  text-align: center;
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; 
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color:#000000;
+  text-align:center;
+  transition: all 0.2s;
+}
+
+.navbar-button-link:hover{
+  background-color:lightgray;
+  border-color: lightgray;
+}
+
+img{
+  width: 80%;
+  height: auto;
+}
+
+.navbar-button{
+  font-size: medium;
+  width: 15vh;
+  display:inline-block;
+  padding:0.35em 1.2em;
+  border:0.1em solid lightslategray;
+  background-color:lightslategray;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color:#000000;
+  text-align:center;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.navbar-button:hover{
+  background-color:lightgray;
+  border-color: lightgray;
+}
+
+.buy-button{
+  font-size: medium;
+  width: 15vh;
+  display:inline-block;
+  padding:0.35em 1.2em;
+  border:0.1em solid green;
+  background-color:green;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color:#000000;
+  text-align:center;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.buy-button:hover{
+  border-color: greenyellow;
+  background-color:greenyellow;
+}
+
+.button-disabled{
+  font-size: medium;
+  width: 15vh;
+  display:inline-block;
+  padding:0.35em 1.2em;
+  border:0.1em solid gray;
+  background-color:gray;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color:#000000;
+  text-align:center;
+  transition: all 0.2s;
+}
+
+.checkout{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5vh;
+  background-color: gray;
+}
+
+.checkout-item{
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 15vh;
+  padding: 5vh;
+  box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+  margin-bottom: 2.5vh;
+  margin-top: 2.5vh;
+}
+
