@@ -1,0 +1,41 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ASPWebApplication
+</name>
+</assembly>
+<members>
+<member name="T:ASPWebApplication.My.MyWebExtension">
+ <summary>
+ Moduł używany do definiowania właściwości, które są dostępne w elemencie My Namespace nazw dla projektów sieci Web.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:ASPWebApplication.My.MyWebExtension.Computer">
+ <summary>
+ Zwraca informacje o komputerze hosta.
+ </summary>
+</member>
+<member name="P:ASPWebApplication.My.MyWebExtension.User">
+ <summary>
+ Zwraca informacje o bieżącym użytkowniku sieci Web.
+ </summary>
+</member>
+<member name="P:ASPWebApplication.My.MyWebExtension.Request">
+ <summary>
+ Zwraca obiekt Request.
+ </summary>
+</member>
+<member name="P:ASPWebApplication.My.MyWebExtension.Response">
+ <summary>
+ Zwraca obiekt Response.
+ </summary>
+</member>
+<member name="P:ASPWebApplication.My.MyWebExtension.Log">
+ <summary>
+ Zwraca obiekt dziennika Asp.
+ </summary>
+</member>
+</members>
+</doc>

@@ -1,0 +1,39 @@
+﻿@{ 
+    var rule = Request["rule"];
+    if (Session["rules"] == null){
+        Session["rules"] = new List<string> {
+            "You do not talk about Fight Club",
+            "You DO NOT talk about Fight Club",
+            "YOU DO NOT TALK ABOUT FIGHT CLUB",
+            "YOUDONOTTALKABOUTFIGHTCLUB",
+            "<inaudible screaming>"
+        };
+    }
+    var rules = (List<string>)Session["rules"];
+    if (IsPost){
+        rules.Add(rule);
+        Session["rules"] = rules;
+        Response.Redirect("Rules.cshtml");
+    }
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <ul>
+        @{ 
+            foreach (var arule in rules){
+                <li>@arule</li>
+            }
+        }
+    </ul>
+    <form method="post" action="~/Rules.cshtml">
+        <label for="rule">Add a rule</label>
+        <input type="text" name="rule" />
+        <input type="submit" value="Add new rule" />
+    </form>
+</body>
+</html>
